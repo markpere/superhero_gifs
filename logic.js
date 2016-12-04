@@ -70,6 +70,11 @@ $(document).ready(function(){
 					var personImage = $("<img>");
 					//giving the image tag a source attribute of a property pulled off the result item
 					personImage.attr("src", results[i].images.fixed_height.url);
+					//Add a class to each gif of "gif"
+					personImage.addClass("gif");
+					//Adding the still and animate attributes
+					personImage.attr("data-still", results[i].images.original_still.url);
+					personImage.attr("data-animate", results[i].images.original_animate.url);
 					// Appending the paragraph and personImage we created to the "gifDiv" div we created
 					gifDiv.append(p);
 					gifDiv.append(personImage);
@@ -97,6 +102,7 @@ $(document).ready(function(){
 		} //ends the else statement
 	});//Ends pause on click function
 });
+
 
 
 
