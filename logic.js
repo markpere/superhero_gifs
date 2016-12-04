@@ -73,8 +73,8 @@ $(document).ready(function(){
 					//Add a class to each gif of "gif"
 					personImage.addClass("gif");
 					//Adding the still and animate attributes
-					personImage.attr("data-still", results[i].images.original_still.url);
-					personImage.attr("data-animate", results[i].images.original_animate.url);
+					// personImage.attr("data-still", results[i].images.original_still.url);
+					// personImage.attr("data-animate", results[i].images.original_animate.url);
 					// Appending the paragraph and personImage we created to the "gifDiv" div we created
 					gifDiv.append(p);
 					gifDiv.append(personImage);
